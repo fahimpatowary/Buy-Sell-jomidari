@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/Jamidar.png" type="image/x-icon">
+
+<!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Bootstrap -->
+
+<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Font Awesome -->
+
+<!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Carousel -->
+
+<!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+<!-- Custom CSS -->
+
+    <title>Add Property</title>
+</head>
+<body>
+    
+<!-- Navbar -->
+
+<div class="new_navbar">
+
+    <!-- Top Bar -->
+        <div class="container-fluid top_bar">
+            <div class="row col-12">
+                <div class="col-lg-12">
+                    <ul class="mb-0">
+                        <li><i class="fa-solid fa-phone phone_icon"></i> +880 1558-587415</li>
+                        <li class="email"><i class="fa-solid fa-envelope email_icon"></i> admin@digitalmarketingbd.com</li>
+                        <li>
+                            <ul class="mb-0 social_icon">
+                                <li><a href="" class="facebook_icon"><i class="fa-brands fa-facebook"></i></a></li>|
+                                <li><a href="" class="twitter_icon"><i class="fa-brands fa-twitter"></i></a></li>|
+                                <li><a href="" class="linked_icon"><i class="fa-brands fa-linkedin-in"></i></a></li>|
+                                <li><a href="" class="pinterest_icon"><i class="fa-brands fa-pinterest"></i></a></li>|
+                                <li><a href="" class="youtube_icon"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    <!-- Top Bar -->
+
+    <!-- main Nav -->
+
+        <div class="container-fluid">
+            <div class="row col-12 m-auto">
+                <div class="col-2 logo_col">
+                    <a href="./index.html"><img src="./image/Jamidar.png" alt=""></a>
+                </div>
+
+                <div class="col-7 navbarItems">
+                    <ul class="navitem">
+                        <li><a href="/">Home</a></li>
+                        <!-- <li><a href="./add_property.html">Add Property</a></li> -->
+                        <li><a href="./about_us.html">About Us</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 third_col third_side">
+                    <div class="row">
+                        <div class="col-7 hide_first padding-2 text-end">
+                            <a href="" class="offer_property btn">
+                                Add Property
+                            </a>
+                        </div>
+
+                        <div class="col-2 hambar_col padding-2">
+                            <div class="hambarger text-end">
+                                <i id="hambar" class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-3" id="profile_part">
+                            <div class="profile_account_image mt-1 text-end" onclick="fclick()">
+                                <img src="./image/user.png" alt="" id="profile_user_image">
+                            </div>
+                        </div>
+
+                        <div class="swich_system">
+                            <i class="fa-solid fa-caret-up"></i>
+                            <ul>
+                                <!-- <li><a href=""><i class="fa-solid fa-store"></i> - Buy & Sell</a></li> -->
+                                <li><a href=""><i class="fa-sharp fa-solid fa-file-invoice"></i> - Document Processing</a></li>
+                                <li><a href=""><i class="fa-solid fa-school-flag"></i> - Real Estate Products</a></li>
+                                <li><a href=""><i class="fa-solid fa-house"></i> - Real Estate Marketing</a></li>
+                            </ul>
+    
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- main Nav -->
+
+</div>
+
+<!-- Responsive Navbar -->
+<div class="responsive_navbar" id="response_nav">
+    <i id="cross_nav" class="fa-sharp fa-solid fa-circle-xmark"></i>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <!-- <li><a href="./add_property.html">Add Property</a></li> -->
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact_us.html">Contact Us</a></li>
+    </ul>
+
+    <!-- <div class="responsive_login_register text-center">
+        <p class="login_register"><span><a href="./login.html" class="login_text">Login</a></span> / <span><a href="./register.html" class="register_text">Register</a></span></p>
+    </div> -->
+
+    <button class="btn btn-lg mt-4">Add Property</button>
+</div>
+<!-- Responsive Navbar -->
+
+<!-- Navbar -->
+
+
+
+<!-- Add Property Page -->
+
+<div class="add_property_page">
+
+    <!-- Head Section -->
+        <div class="add_property_head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 property_head_left">
+                        <h2>Rent or Sell <br> Property Online</h2>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corporis error fugiat placeat magnam quae amet nam repellat voluptates a sint id, corrupti sunt accusamus assumenda non fuga veritatis nulla.</p>
+
+                        <a href="" class="btn">Get Started</a>
+                    </div>
+                    <div class="col-lg-7 property_head_right text-center">
+                        <iframe width="560" height="330" src="https://www.youtube.com/embed/Re-6rcV5RUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Head Section -->
+
+    <!-- How it Works -->
+        <div class="container-fluid my-5">
+            <h2 class="text-center">How it Works</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Natus et quasi soluta saepe odit fugit animi alias repellendus vel quisquam.</p>
+
+            <div class="row how_to_work_image text-center">
+                <div class="col-lg-3">
+                    <img src="./image/add-pro-4.png" alt="">
+                    <p class="mx-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, nam? adipisicing elit.</p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./image/add-pro-3.png" alt="">
+                    <p class="mx-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, nam? adipisicing elit.</p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./image/add-pro-2.png" alt="">
+                    <p class="mx-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, nam? adipisicing elit.</p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./image/add-pro-1.png" alt="">
+                    <p class="mx-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, nam? adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    <!-- How it Works -->
+
+    <!-- FAQ Section -->
+
+        <div class="container faq_section my-5">
+
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+
+            <div class="faq">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h5>What are the benefits of adding my property?</h5>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo commodi earum nihil ad sequi doloribus reprehenderit perferendis quisquam recusandae animi consectetur iste architecto, molestiae nam eveniet dolores vel aliquam delectus nisi assumenda dolor. Facilis ut reprehenderit accusantium, tempora, neque nesciunt hic dolor qui sint et quis quod fugiat? Commodi.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>Do I need to sign any agreements?</h5>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque culpa aliquam praesentium reiciendis iusto necessitatibus delectus expedita dolorum, repellat hic suscipit accusantium vel autem. Neque ad at perspiciatis ipsum consequatur molestiae sed blanditiis hic cupiditate aliquam, optio doloremque vero eligendi ex, vel, perferendis quis assumenda eos excepturi amet placeat repudiandae! Aliquid culpa distinctio corrupti ut?</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <h5>What is the process of selling/renting my property?</h5>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam libero ratione eius error soluta aliquam, eveniet perferendis voluptas ad odit dolores ipsam tenetur voluptatem, repellat iusto eaque excepturi quo voluptates!</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingfour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                              <h5>How long will it take to find buyers/tenants?</h5>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam libero ratione eius error soluta aliquam, eveniet perferendis voluptas ad odit dolores ipsam tenetur voluptatem, repellat iusto eaque excepturi quo voluptates!</div>
+                        </div>
+                      </div>
+                      
+                  </div>
+            </div>
+
+        </div>
+
+    <!-- FAQ Section -->
+
+    <!-- Learn More About -->
+
+        <div class="container-fluid learn_more_about my-5">
+            <h2 class="text-center">Learn More About Property Selling</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et quasi soluta saepe odit fugit animi alias repellendus vel quisquam.</p>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card mt-4">
+                        <div class="card_img">
+                            <img src="./image/p1.jpg" class="card-img" alt="">
+                        </div>
+                        <p class="catagory">Land</p>
+                        <div class="card-body">
+                            <h4>When To Sell Your House And How ?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod consectetur....</p>
+                            <div class="my-3 learn_more_btn text-center">
+                                <a href="" class="btn">Read More</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>September 2, 2020</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <p><i class="fa-regular fa-clock"></i> 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card mt-4">
+                        <div class="card_img">
+                            <img src="./image/p2.jpg" class="card-img" alt="">
+                        </div>
+                        <p class="catagory">Land with Building</p>
+                        <div class="card-body">
+                            <h4>When To Sell Your House And How ?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod consectetur....</p>
+                            <div class="my-3 learn_more_btn text-center">
+                                <a href="" class="btn">Read More</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>September 2, 2020</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <p><i class="fa-regular fa-clock"></i> 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card mt-4">
+                        <div class="card_img">
+                            <img src="./image/p3.jpg" class="card-img" alt="">
+                        </div>
+                        <p class="catagory">Trends</p>
+                        <div class="card-body">
+                            <h4>When To Sell Your House And How ?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod consectetur....</p>
+                            <div class="my-3 learn_more_btn text-center">
+                                <a href="" class="btn">Read More</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>September 2, 2020</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <p><i class="fa-regular fa-clock"></i> 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card mt-4">
+                        <div class="card_img">
+                            <img src="./image/p1.jpg" class="card-img" alt="">
+                        </div>
+                        <p class="catagory">Paper Information</p>
+                        <div class="card-body">
+                            <h4>When To Sell Your House And How ?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod consectetur....</p>
+                            <div class="my-3 learn_more_btn text-center">
+                                <a href="" class="btn">Read More</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>September 2, 2020</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <p><i class="fa-regular fa-clock"></i> 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Learn More About -->
+
+    <!-- Interested Phone number -->
+
+    <div class="container interested_to_know_more my-5">
+        <div class="row">
+            <div class="col-lg-8 interest_content">
+                <h4 class="px-2">Interested to know more about Jamidari?</h4>
+                <p class="mb-0 px-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, vitae natus. Obcaecati sapiente non dicta ducimus! Molestiae maiores odio porro.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 class="mt-4"><i class="fa-solid fa-phone"></i> +880 1722-586584</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interested Phone number -->
+
+</div>
+
+<!-- Add Property Page -->
+
+
+
+<!-- Go Up -->
+<a href="#top">
+    <div id="go_up">
+        <button type="submit">
+            <i class="fa-sharp fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+</a>
+<!-- Go Up -->
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer_section_one py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer_first_first">
+                    <h5>About Jamidari</h5>
+                    <img src="./image/Jamidar.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vero dolore asperiores magni sint quibusdam eius consequatur earum adipisci eos itaque iure esse ipsam . . .</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer_heading_2">Menu</h5>
+                    <ul>
+                        <li><a href="">- About Us</a></li>
+                        <li><a href="">- Careers</a></li>
+                        <li><a href="">- Blog</a></li>
+                        <li><a href="">- Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer_heading_3">Get Help</h5>
+                    <ul>
+                        <li><a href="">- Support</a></li>
+                        <li><a href="">- Your Orders</a></li>
+                        <li><a href="">- Accessibility</a></li>
+                        <li><a href="">- Shipping & Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer_first_four">
+                    <h5 class="footer_heading_4">Connect With Us</h5>
+                    <ul class="mt-4">
+                        <li><a href=""><i class="fa-brands fa-facebook">  </i></a>  </li> <span>|</span>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a>  </li> <span>|</span>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i> </a>  </li> <span>|</span>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a>  </li> <span>|</span>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                    <h5 class="footer_heading_4 mt-5">Mobile App</h5>
+                    <p class="footer_address mt-4"><i class="fa-solid fa-house"></i> Flat # 6/A, Level 7, House 10, Road# 02, Sector# 06, House Building Uttara Dhaka-1230.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer_graphic_img"></div>
+    
+    <div class="footer_section_two py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center footer_two_border_one">
+                    <p><a href="">Terms And Comdition</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center footer_two_border_two">
+                    <p><a href="">Privacy And Cokies</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center footer_two_border_three">
+                    <p><a href="">Refund Policy</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                    <p><a href="">Disclaimer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copywrite text-center py-3">
+        <p>&copy; <span id="date"></span> DMS Bangladesh. All Rights Reserved. | Design & Development By:- <a href="https://www.digitalmarketingbd.com/">Digital Marketing Solution (Pvt.) Ltd.</a></p>
+    </div>
+    
+</footer>
+<!-- Footer Section -->
+
+
+<!-- Custom JS -->
+<script src="./js/app.js"></script>
+<!-- Custom JS -->
+
+
+<!-- Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Carousel -->
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+
+
+
+</body>
+</html>

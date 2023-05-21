@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/Jamidar.png" type="image/x-icon">
+
+<!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Bootstrap -->
+
+<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Font Awesome -->
+
+<!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Carousel -->
+
+<!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+<!-- Custom CSS -->
+
+    <title>Home Page</title>
+</head>
+<body class="contact_body">
+    
+<!-- Navbar -->
+
+<div class="new_navbar">
+
+    <!-- Top Bar -->
+        <div class="container-fluid top_bar">
+            <div class="row col-12">
+                <div class="col-lg-12">
+                    <ul class="mb-0">
+                        <li><i class="fa-solid fa-phone phone_icon"></i> +880 1558-587415</li>
+                        <li class="email"><i class="fa-solid fa-envelope email_icon"></i> admin@digitalmarketingbd.com</li>
+                        <li>
+                            <ul class="mb-0 social_icon">
+                                <li><a href="" class="facebook_icon"><i class="fa-brands fa-facebook"></i></a></li>|
+                                <li><a href="" class="twitter_icon"><i class="fa-brands fa-twitter"></i></a></li>|
+                                <li><a href="" class="linked_icon"><i class="fa-brands fa-linkedin-in"></i></a></li>|
+                                <li><a href="" class="pinterest_icon"><i class="fa-brands fa-pinterest"></i></a></li>|
+                                <li><a href="" class="youtube_icon"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    <!-- Top Bar -->
+
+    <!-- main Nav -->
+
+        <div class="container-fluid">
+            <div class="row col-12 m-auto">
+                <div class="col-2 logo_col">
+                    <a href="./index.html"><img src="./image/Jamidar.png" alt=""></a>
+                </div>
+
+                <div class="col-7 navbarItems">
+                    <ul class="navitem">
+                        <li><a href="/">Home</a></li>
+                        <!-- <li><a href="./add_property.html">Add Property</a></li> -->
+                        <li><a href="./about_us.html">About Us</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 third_col third_side">
+                    <div class="row">
+                        <div class="col-7 hide_first padding-2 text-end">
+                            <a href="" class="offer_property btn">
+                                Add Property
+                            </a>
+                        </div>
+
+                        <div class="col-2 hambar_col padding-2">
+                            <div class="hambarger text-end">
+                                <i id="hambar" class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-3" id="profile_part">
+                            <div class="profile_account_image mt-1 text-end" onclick="fclick()">
+                                <img src="./image/user.png" alt="" id="profile_user_image">
+                            </div>
+                        </div>
+
+                        <div class="swich_system">
+                            <i class="fa-solid fa-caret-up"></i>
+                            <ul>
+                                <li><a href=""><i class="fa-solid fa-store"></i> - Buy & Sell</a></li>
+                                <li><a href=""><i class="fa-sharp fa-solid fa-file-invoice"></i> - Document Processing</a></li>
+                                <li><a href=""><i class="fa-solid fa-school-flag"></i> - Real Estate Products</a></li>
+                                <li><a href=""><i class="fa-solid fa-house"></i> - Real Estate Marketing</a></li>
+                            </ul>
+    
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- main Nav -->
+
+</div>
+
+<!-- Responsive Navbar -->
+<div class="responsive_navbar" id="response_nav">
+    <i id="cross_nav" class="fa-sharp fa-solid fa-circle-xmark"></i>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <!-- <li><a href="./add_property.html">Add Property</a></li> -->
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact_us.html">Contact Us</a></li>
+    </ul>
+
+    <!-- <div class="responsive_login_register text-center">
+        <p class="login_register"><span><a href="./login.html" class="login_text">Login</a></span> / <span><a href="./register.html" class="register_text">Register</a></span></p>
+    </div> -->
+
+    <a href="" class="btn btn-lg mt-4">Add Property</a>
+</div>
+<!-- Responsive Navbar -->
+
+<!-- Navbar -->
+
+
+
+
+<!-- Contact Us Page -->
+
+<div class="contact_us_page">
+    <h2 class="text-center get_in_touch">Get in Touch !</h2>
+    <p class="text-center">Contact us for a quote, help to join the team.</p>
+    
+    <div class="container contact_three_type text-center mt-4">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="contact_address">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <p class="mb-0">H #10, R #2, House Building Uttara, Dhaka - 1230</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact_phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="mb-0">+02 1234 567</p>
+                    <p class="mb-0">+02 1234 567</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact_email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="mb-0">example@gmail.com</p>
+                    <p class="mb-0">example@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="contact_left_side mt-4">
+                <h2 class="mb-5">Make Your Listing to Appeal the Right Audience</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, suscipit! Autem, harum in expedita ex asperiores perferendis possimus facilis aperiam. dolor sit amet consectetur adipisicing expedita ex asperiores perferendis possimus facilis aperiam. dolor</p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 mt-4">
+                        <ul>
+                            <li>-> Lorem ipsum, dolor sit amet</li>
+                            <li>-> Lorem, ipsum dolor sit amet consectetur </li>
+                            <li>-> Consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-4">
+                        <ul>
+                            <li>-> Lorem ipsum, dolor sit amet </li>
+                            <li>-> Lorem, ipsum dolor sit amet </li>
+                            <li>-> Lorem ipsum dolor sit amet, consectetur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+
+            <div class="contact_form_part">
+                <h4 class="mb-5">Contact Form</h4>
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            
+                            <label for="name" class="mb-2">Full Name</label>
+                            <input type="text" id="name" placeholder="Full Name" class="form-control" name="">
+        
+                            <label for="email" class="mt-3 mb-2">Email</label>
+                            <input type="email" id="email" placeholder="Email" class="form-control" name="">
+        
+                            <label for="phone" class="mt-3 mb-2">Phone</label>
+                            <input type="tel" id="phone" placeholder="Phone" class="form-control" name="">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="message" class="mb-2 message_bar">Message</label>
+                            <textarea class="form-control" placeholder="message" name="" id="message" cols="30" rows="10"></textarea>
+                        </div>
+        
+                        <div class="col-lg-6 mt-5">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+        
+                        <div class="col-lg-6 mt-5 text-center">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Page -->
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d766.9938545587721!2d90.40125191944108!3d23.87336579559316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79ce4c560ed%3A0xed6ac82bbf2ae6a9!2sDigital%20Marketing%20Solution%20(Pvt.)%20Ltd.!5e0!3m2!1sen!2sbd!4v1668516308677!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- Contact Us Page -->
+
+
+
+<!-- Go Up -->
+<a href="#top">
+    <div id="go_up">
+        <button type="submit">
+            <i class="fa-sharp fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+</a>
+<!-- Go Up -->
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer_section_one py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer_first_first">
+                    <h5>About Jamidari</h5>
+                    <img src="./image/Jamidar.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vero dolore asperiores magni sint quibusdam eius consequatur earum adipisci eos itaque iure esse ipsam . . .</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer_heading_2">Menu</h5>
+                    <ul>
+                        <li><a href="">- About Us</a></li>
+                        <li><a href="">- Careers</a></li>
+                        <li><a href="">- Blog</a></li>
+                        <li><a href="">- Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer_heading_3">Get Help</h5>
+                    <ul>
+                        <li><a href="">- Support</a></li>
+                        <li><a href="">- Your Orders</a></li>
+                        <li><a href="">- Accessibility</a></li>
+                        <li><a href="">- Shipping & Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer_first_four">
+                    <h5 class="footer_heading_4">Connect With Us</h5>
+                    <ul class="mt-4">
+                        <li><a href=""><i class="fa-brands fa-facebook">  </i></a>  </li> <span>|</span>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a>  </li> <span>|</span>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i> </a>  </li> <span>|</span>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a>  </li> <span>|</span>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                    <h5 class="footer_heading_4 mt-5">Mobile App</h5>
+                    <p class="footer_address mt-4"><i class="fa-solid fa-house"></i> Flat # 6/A, Level 7, House 10, Road# 02, Sector# 06, House Building Uttara Dhaka-1230.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer_graphic_img"></div>
+
+    <div class="footer_section_two py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center footer_two_border_one">
+                    <p><a href="">Terms And Comdition</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center footer_two_border_two">
+                    <p><a href="">Privacy And Cokies</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center footer_two_border_three">
+                    <p><a href="">Refund Policy</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                    <p><a href="">Disclaimer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copywrite text-center py-3">
+        <p>&copy; <span id="date"></span> DMS Bangladesh. All Rights Reserved. | Design & Development By:- <a href="https://www.digitalmarketingbd.com/">Digital Marketing Solution (Pvt.) Ltd.</a></p>
+    </div>
+    
+</footer>
+<!-- Footer Section -->
+
+
+<!-- Custom JS -->
+<script src="./js/app.js"></script>
+<!-- Custom JS -->
+
+
+<!-- Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Carousel -->
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+
+
+</body>
+</html>
